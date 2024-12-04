@@ -3,4 +3,8 @@ function validAnagram(first,second){
         return false;
     }
     }
-    
+    const lookup = {}   
+
+    for(let i=0; i<first.length; i++){
+        const letter = first[i];
+        lookup[letter]?lookup[letter] +
