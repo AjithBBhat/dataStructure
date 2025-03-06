@@ -3,8 +3,8 @@ const array = [1,4,0,3,0];
 function moveZeros(array) {
     let lastZeroFoundAt = 0
     for( let i=0;i<array.length;i++ ){
-        if(array[i]!=0){
-            [array[lastZeroFoundAt],array[i]] = [array[i],array[lastZeroFoundAt]]
+        if(array[i]!==0){
+            [array[i],array[lastZeroFoundAt]] = [array[lastZeroFoundAt],array[i]]
             lastZeroFoundAt++
         }
     } 
